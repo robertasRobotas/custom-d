@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { createBrowserHistory } from 'history';
 import App from './App';
 
-const title = 'My Minimal React Webpack Babel Setup';
+const history = createBrowserHistory();
+
 
 ReactDOM.render(
-  <App title={title} />,
+  <App history={history} />,
   document.getElementById('app')
 );
 
